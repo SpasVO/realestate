@@ -149,6 +149,7 @@ body {
 
 
 .main-block {
+    padding-bottom: 110px;
     
 }
 
@@ -189,6 +190,8 @@ body {
 
 .content-main-block {
     padding-top: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .content-main-block__body {
@@ -222,18 +225,18 @@ body {
 }
 
 
-.form-main-block {
+.form-main-block { 
     display: flex;
     margin-right: -188px;
     position: relative;
     z-index: 2;
-    height: 86px;
-    background: #FFF url("../img/main/icons/home.svg") 33px 50% no-repeat;
+    background: #FFF url("/RealEstate/img/main/icons/home.svg") 33px 32px no-repeat;
     box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 
     0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
 }
 .form-main-block__input {
+    height: 86px;
     padding: 0px 0px 0px 74px;
     background-color: transparent;
     border: 1px solid #DADADA;
@@ -249,6 +252,7 @@ body {
     color: rgba(49, 53, 59, 0.3);
 }
 .form-main-block__button {
+    height: 86px;
     width: 188px;
     flex: 0 0 188px;
     padding: 5px 15px;
@@ -304,7 +308,7 @@ body {
     position: static;
     height: 20px;
     width: 11px;
-    background: url("/img/main/icons/arrow.svg") 0 0 no-repeat;
+    background: url("/RealEstate/img/main/icons/arrow.svg") 0 0 no-repeat;
 }
 
 .body-main-block__arrow::after {
@@ -314,6 +318,7 @@ body {
 .body-main-block__arrow.swiper-button-prev {
     transform: rotate(-180deg);
 }
+
 
 
 /* .swiper-button-prev {
@@ -337,12 +342,64 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
 }
 .partner-main-block__item {
 }
 .partner-main-block__item img {
     max-width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+    .body-main-block {
+        display: block;
+    }
+    .form-main-block {
+        margin-right: 0;
+    }
+    .content-main-block__body {
+        padding-right: 0px;
+    }
+    .body-main-block__content{
+        margin-bottom: 40px;
+    }
+    .main-block__container {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+    .main-block__body {
+        margin-bottom: 40px;
+    }
+    .partners-main-block {
+        position: relative;
+        z-index: 2;
+        max-width: none;
+    }
+}
+
+@media (max-width: 767.98px){
+    .partner-main-block__items {
+        justify-content: center;
+    }
+    .content-main-block__title {
+        font-size: 30px;
+        line-height: 120%;
+    }
+    .form-main-block {
+        display: block;
+    }
+    .form-main-block__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 479.98px){
+    .form-main-block{
+        background: #FFF;
+    }
+    .form-main-block__input {
+        padding: 0px 15px;
+    }
 }
 /*                                                       */
 .footer {
