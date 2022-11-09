@@ -273,6 +273,7 @@ body {
     width: 188px;
     flex: 0 0 188px;
     padding: 5px 15px;
+    transition: all 0.3s ease 0s;
     background: #F85A47;
     cursor: pointer;
     font-weight: 600;
@@ -280,7 +281,10 @@ body {
     line-height: 23px;
     letter-spacing: 0.01em;
     color: #FFFFFF;
+}
 
+.form-main-block__button:hover{
+    background-color: #e2230d;
 }
 
 
@@ -560,6 +564,195 @@ body {
     .how__title {
         margin-bottom: 30px;
     }
+}
+
+/*                                                   */
+.deals {
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+@media (max-width: 990.98px) {
+    .deals {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .deals {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .main-block {
+        padding-bottom: 30px;
+        
+    }
+}
+.deals__container {
+
+}
+.deals__header {
+    margin-bottom: 50px;
+}
+.deals__tabs {
+}
+
+
+.header-deals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.header-deals__content {
+    flex: 1 1 auto;
+}
+.header-deals__title {
+}
+.header-deals__title:not(:last-child){
+    margin-bottom: 15px;
+}
+.header-deals__text {
+    max-width: 470px;
+    line-height: 24px;
+}
+.header-deals__link {
+    background: #F85A47;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 22px 33px;
+    box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 
+    0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 
+    0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+    border-radius: 5px;
+}
+
+@media (max-width: 767.98px){
+    .header-deals__link {
+        width: 100%;
+    }
+}
+
+.header-deals__link:hover{
+    background-color: #e2230d;
+}
+
+
+.tabs-deals {
+}
+.tabs-deals__nav {
+    display: flex;
+    column-gap: 50px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+.tabs-deals__button {
+    font-size: 19px;
+    line-height: 26px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease 0s;
+    background-color: transparent;
+}
+
+.tabs-deals__button:hover {
+    color: #F85A47;
+}
+.tabs-deals__button::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    top: 30px;
+    height: 1px;
+    transition: width 0.3s ease 0s;
+    background-color: #F85A47;
+
+}
+.tabs-deals__button:hover::after {
+    width: 100%;
+}
+.tabs-deals__button.active {
+    color: #F85A47;
+}
+
+.tabs-deals__button.active::after {
+    width: 100%;
+}
+.tabs-deals__body {
+}
+
+.tabs-deals__item {
+    display: none;
+}
+
+.tabs-deals__item.active {
+    display: block;
+}
+
+
+.item-tabs {
+}
+.item-tabs__items {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.item-tabs__item {
+    position: relative;
+}
+.item-tabs__options {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    z-index: 2;
+}
+.item-tabs__option {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.item-tabs__option:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.item-tabs__image {
+    position: relative;
+    display: block;
+    padding-bottom: 81%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.item-tabs__image:hover img {
+    transform: scale(1.1);
+}
+
+.item-tabs__image img {
+    transition: transform 0.3s ease 0s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 /*                                                       */
 .footer {
